@@ -44,26 +44,56 @@ body {
 
 }
 
-nav {
-    padding: 1em;
-    z-index: 1000;
-    color: none;
-    width: 100vw
-}
 
-.class-name {
+nav {
     position: fixed;
     top: 0;
     left: 0;
-    margin: 1.5em 2.5em;
+    width: 100%;
+    padding-top: 4em;
+    background-color: white;
+    z-index: 1000;
+}
+
+h1 {
+    margin-top: 3em;
+}
+
+.class-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2.5em;
 }
 
 .menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 1.5em 2.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2.5em;
 }
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
 
 nav a {
     color: black;
